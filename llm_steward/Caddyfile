@@ -1,0 +1,10 @@
+
+
+:2016 {
+	# Change the port and host as needed
+	route /api/* {
+		reverse_proxy http://localhost:4002
+	}
+
+	file_server
+}
